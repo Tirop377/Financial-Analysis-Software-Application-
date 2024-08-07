@@ -1,0 +1,154 @@
+.calculator{
+  display: flex;
+  gap: 10px;
+  width: 90vw;
+}
+
+.left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #121212; 
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
+.left .top{
+  display: flex;
+  flex-direction: column;
+}
+
+.topInput{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: end;
+}
+
+.topInput div{
+  width: 70%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+}
+
+.topInput input{
+  border: none;
+  flex: 5;
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #333333;
+  color: white;
+}
+
+.topInput span{
+  flex: 1;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.bottom{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding-bottom: 20px;
+}
+
+.bottom h2{
+  font-size: 2rem;
+  font-weight: 500;
+  color: gray;
+}
+
+.cashFlowInput{
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.cashFlowInput label{
+  flex: 1.5;
+  padding-left: 20px;
+}
+
+.cashFlowInput input{
+  flex: 5;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #333333;
+}
+
+.cashFlowInput button{
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #121212;
+}
+
+.cashFlowInput button span{
+  background-color: red;
+  padding: 4px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+
+}
+
+.cashFlowInput button span:hover{
+  background-color: blue;
+
+}
+
+
+.calcButtons{
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+}
+
+.calcButtons button{
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  background-color: rgb(23, 143, 184);
+  border: none;
+  transition: all 0.5s;
+  color: #F6F6F6;
+}
+
+.calcButtons button:hover{
+  background-color: rgb(85, 190, 224);
+}
+
+.right{
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+  background-color: #121212; 
+  border-radius: 10px;
+  max-height: 70vh;
+}
+
+.right p{
+  font-size: 1.3rem;
+  font-weight: 500;
+   color: rgb(177, 173, 173);
+   display: flex;
+   justify-content: space-between;
+}
+
+.right span{
+  color: rgb(11, 196, 11);
+  font-size: 1.5rem;
+}
